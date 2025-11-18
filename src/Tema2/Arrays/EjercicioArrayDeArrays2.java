@@ -11,7 +11,7 @@ public class EjercicioArrayDeArrays2 {
         numeros[1][0] = 4;
         numeros[1][1] = 5;
         numeros[1][2] = 6;
-        System.out.println("Vamos aimprimir el Array de Arrays");
+        System.out.println("Vamos a imprimir el Array de Arrays");
         for (int[] numero : numeros) {
             System.out.println(Arrays.toString(numero));
         }
