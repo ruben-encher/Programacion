@@ -16,11 +16,11 @@ public class Ejercicio9 {
 
         int[] C = new int[nA + nB];
 
-        int i = 0; // índice de A
-        int j = 0; // índice de B
-        int k = 0; // índice de C
+        int i = 0;
+        int j = 0;
+        int k = 0;
 
-        // 1. Mezclar mientras haya elementos en A y B
+
         while (i < nA && j < nB) {
             if (A[i] < B[j]) {
                 C[k] = A[i];
@@ -32,21 +32,21 @@ public class Ejercicio9 {
             k++;
         }
 
-        // 2. Copiar lo que quede de A (si queda algo)
+
         while (i < nA) {
             C[k] = A[i];
             i++;
             k++;
         }
 
-        // 3. Copiar lo que quede de B (si queda algo)
+
         while (j < nB) {
             C[k] = B[j];
             j++;
             k++;
         }
 
-        // Mostrar el resultado
+
         System.out.print("Array C: ");
         for (int x = 0; x < C.length; x++) {
             System.out.print(C[x] + " ");
